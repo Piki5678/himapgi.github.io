@@ -1,0 +1,448 @@
+
+
+/* Navbar */
+
+.navbar {
+    background-image: url(image/awan.jpg);
+    font-family: "viga";
+    text-align:end;
+    padding: -1000px;
+    z-index: 1;
+}
+
+.navbar-brand { 
+    font-family: "viga";
+    font-size: 32px;
+}
+
+.navbar-brand, .nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(image/Penguins.jpg);
+    background-size: cover ;
+    height: 668px;
+    margin-top: -200px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgb(51, 52, 53), rgba(211, 90, 90,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: 150px;
+    margin-top: 200px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0.7, 0.7, 0.7, 0.7);
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Akhir jumbotron */
+
+/* Info lowongan */
+.info-lowongan {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.info-lowongan image {
+    width: 40px;
+    height : 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-lowongan h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-lowongan p {
+    font-size: 14px;
+    color: violet;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Workingspace */
+.workingspace {
+    margin-top: 100px;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+
+}
+
+.formnama {
+    border-radius: 10px;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+         display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%; 
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .nav-link-2 {
+      text-transform: uppercase;
+      margin-right: 30px;
+    }
+
+    .nav-link-2:hover::after {
+      content: '';
+       display: block;
+      border-bottom: 3px solid rgb(46, 24, 24);
+      width: 50%; 
+      margin: auto;
+      padding-bottom: 5px;
+      margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        background-image: url(image/Penguins.jpg);
+        background-size: cover ;
+        height: 768px;
+        margin-top: -200px;        
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+    
+}
+
+body {
+    background-color: rgb(161, 185, 231);
+    scroll-behavior: smooth
+}
+
+.row .mb-2 {
+  margin-top: 10px;
+}
+ 
+
+img {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas: 
+        'hero hero feture-1'
+        'hero hero feture-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero h2, .hero p {
+    display: none;
+}
+
+.features {
+    background-color: #000;
+    color: white;
+}
+
+.container .py-5 {
+    margin-top: 300px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .newsletter1 {
+      border-radius: 40px;
+  }
+
+/* login */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: black;
+  text-align: center;
+  background-color: rgb(161, 185, 231);
+  border-top: .05rem solid rgb(161, 185, 231);
+  margin-top: 20px;
+  margin-bottom: -10px;
+  margin-left: 30px;
+}
+
+.title {
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.container-penutup {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10%;
+}

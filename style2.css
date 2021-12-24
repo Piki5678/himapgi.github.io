@@ -1,0 +1,83 @@
+/* Navbar */
+
+.navbar {
+    background-image: url(image/awan.jpg);
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand { 
+    font-family: viga;
+    font-size: 32px;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+
+}
+
+.formnama {
+    border-radius: 10px;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+         display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+}
+
+body {
+    background-color: rgb(161, 185, 231);
+    font-size: 18px;
+}
+
+
+img {
+    width: 70%;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas: 
+        'hero hero feature-1'
+        'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+.features {
+    background-color: #000;
+    color: white;
+}
